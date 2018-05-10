@@ -24,5 +24,10 @@ export class ProductosService {
 
   }
 
+  public cargar_producto( cod:string ){
+
+    return this.http.get(`https://portafolio-62c4b.firebaseio.com/productos/${ cod }.json`);
+  }
+
 
 }
